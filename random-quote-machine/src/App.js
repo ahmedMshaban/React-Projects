@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import QuoteText from "./components/QuoteText";
 import QuoteAuthor from "./components/QuoteAuthor";
 import NewQuote from "./components/NewQuote";
@@ -48,11 +48,16 @@ const Quotes = [
 ];
 
 function App() {
+  const [currentQuote, setCurrentQuote] = useState(0);
+  const generateRandomQuote = () => {
+    setCurrentQuote(Math.floor(Math.random() * Quotes.length)); // returns a random integer from 0 to Quotes length
+  };
+
   return (
     <div id="quote-box">
       <QuoteText />
       <QuoteAuthor />
-      <NewQuote />
+      <NewQuote onClickHandler={generateRandomQuote} />
       <ShareQuote />
     </div>
   );
