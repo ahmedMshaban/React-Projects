@@ -6,6 +6,10 @@ import ShareQuote from "./components/ShareQuote";
 
 const Quotes = [
   {
+    text: "You take your life in your own hands, and what happens? A terrible thing, no one to blame.",
+    author: "Erica Jong",
+  },
+  {
     text: "You miss 100% of the shots you don't take.",
     author: "Wayne Gretzky",
   },
@@ -48,17 +52,17 @@ const Quotes = [
 ];
 
 function App() {
-  const [currentQuote, setCurrentQuote] = useState(0);
+  const [currentQuote, setCurrentQuote] = useState(Math.floor(Math.random() * Quotes.length));
   const generateRandomQuote = () => {
     setCurrentQuote(Math.floor(Math.random() * Quotes.length)); // returns a random integer from 0 to Quotes length
   };
 
   return (
     <div id="quote-box">
-      <QuoteText />
-      <QuoteAuthor />
+      <QuoteText text={Quotes[currentQuote].text} />
+      <QuoteAuthor author={Quotes[currentQuote].author} />
       <NewQuote onClickHandler={generateRandomQuote} />
-      <ShareQuote />
+      <ShareQuote text={Quotes[currentQuote].text}/>
     </div>
   );
 }

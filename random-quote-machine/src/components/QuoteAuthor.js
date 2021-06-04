@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const QuoteAuthor = () => {
-    return (
-        <div id="author">Author</div>
-    );
-}
+const QuoteAuthor = (props) => {
+  return (
+    <div id="author">
+      <span>{props.author}</span>
+    </div>
+  );
+};
 
 export default QuoteAuthor;

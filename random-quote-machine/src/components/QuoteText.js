@@ -1,8 +1,8 @@
 import React from 'react';
 
-const QuoteText = () => {
+const QuoteText = (props) => {
     return (
-        <div id="text">text</div>
+        <div id="text"><p>{props.text}</p></div>
     );
 }
 
