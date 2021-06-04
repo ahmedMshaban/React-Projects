@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-Projects/random-quote-machine/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/React-Projects/random-quote-machine/static/js/main.330e6755.chunk.js",
+    "main.js.map": "/React-Projects/random-quote-machine/static/js/main.330e6755.chunk.js.map",
+    "runtime-main.js": "/React-Projects/random-quote-machine/static/js/runtime-main.d48c99a3.js",
+    "runtime-main.js.map": "/React-Projects/random-quote-machine/static/js/runtime-main.d48c99a3.js.map",
+    "static/js/2.c43475fb.chunk.js": "/React-Projects/random-quote-machine/static/js/2.c43475fb.chunk.js",
+    "static/js/2.c43475fb.chunk.js.map": "/React-Projects/random-quote-machine/static/js/2.c43475fb.chunk.js.map",
+    "index.html": "/React-Projects/random-quote-machine/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/React-Projects/random-quote-machine/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.c43475fb.chunk.js.LICENSE.txt": "/React-Projects/random-quote-machine/static/js/2.c43475fb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d48c99a3.js",
+    "static/js/2.c43475fb.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.330e6755.chunk.js"
+  ]
+}
