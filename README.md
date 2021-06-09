@@ -1,6 +1,6 @@
 # Random Quote Machine React App
 
-[Project URL](https://github.com/facebook/create-react-app).
+[Project URL](https://ahmedmshaban.github.io/random-quote-machine/).
 
 ## Dependencies
 
