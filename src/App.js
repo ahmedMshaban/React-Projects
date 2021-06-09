@@ -11,8 +11,8 @@ function App() {
   const [newQuote, setNewQuote] = useState(false);
 
   const generateRandomQuote = () => {
-    setNewQuote(!newQuote);
-  }
+    setNewQuote((prevState) => !prevState);
+  };
 
   useEffect(() => {
     fetch("https://api.quotable.io/random")
@@ -35,11 +35,17 @@ function App() {
     return <div>Loading...</div>;
   } else {
     return (
-      <div id="quote-box">
-        <QuoteText text={items.content} />
-        <QuoteAuthor author={items.author} />
-        <NewQuote onClickHandler={generateRandomQuote} />
-        <ShareQuote text={items.content} />
+      <div id="quote-box" className="card">
+        <div className="card-body">
+          <blockquote>
+            <QuoteText text={items.content} />
+            <QuoteAuthor author={items.author} />
+          </blockquote>
+        </div>
+        <div className="card-footer">
+          <ShareQuote text={items.content} />
+          <NewQuote onClickHandler={generateRandomQuote} />
+        </div>
       </div>
     );
   }
